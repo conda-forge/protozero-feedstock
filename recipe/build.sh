@@ -15,6 +15,6 @@ ninja
 ninja install
 
 # Skip tests during cross-compilation
-if [[ "${CONDA_BUILD_CROSS_COMPILE:-}" != "1" ]]; then
+if [[ "${CONDA_BUILD_CROSS_COMPILATION:-}" != "1" ]]; then
     ninja test
 fi
