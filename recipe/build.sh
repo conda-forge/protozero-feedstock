@@ -13,4 +13,8 @@ cmake ${CMAKE_ARGS} "${extra_cmake_args[@]}" \
 
 ninja
 ninja install
-ninja test
+
+# Skip tests during cross-compilation
+if [[ "${CONDA_BUILD_CROSS_COMPILE:-}" != "1" ]]; then
+    ninja test
+fi
