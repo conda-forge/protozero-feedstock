@@ -1,5 +1,5 @@
 context:
-  version: "1.8.1"
+  version: "1.8.2"
 
 package:
   name: protozero
@@ -7,10 +7,10 @@ package:
 
 source:
   - url: https://github.com/mapbox/protozero/archive/refs/tags/v${{ version }}.tar.gz
-    sha256: 6c7a896f1dc08435e8cd4f3780ff688cd0bfce6890599b755f6f3cb36398dc25
+    sha256: 68d1df951b4d8397355c8fc9ffed40d9c06282a877fe847403feac6edcee3ef1
 
 build:
-  number: 1
+  number: 0
 
 requirements:
   build:
@@ -31,7 +31,7 @@ about:
   license: BSD-2-Clause
   license_file:
     - LICENSE.md
-  summary: Minimalist protocol buffer decoder and encoder in C++ 
+  summary: Minimalist protocol buffer decoder and encoder in C++
   description: Designed for high performance. Suitable for writing zero copy parsers and encoders with minimal need for run-time allocation of memory.
   documentation: https://github.com/mapbox/protozero
   repository: https://github.com/mapbox/protozero
